@@ -32,6 +32,15 @@ colors[5]=color('pink');
 colors[6]=color('red');
 colors[7]=color('yellow');
 
+colors[8]=color('fuchsia');
+colors[9]=color('seaGreen');
+colors[10]=color('blueViolet');
+colors[11]=color('Sienna');
+colors[12]=color('salmon');
+colors[13]=color('Navy');
+colors[14]=color('Moccasin');
+colors[15]=color('Maroon');
+
 }
 
 function draw() {
