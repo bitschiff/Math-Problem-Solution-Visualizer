@@ -53,11 +53,7 @@ function draw() {
     points[i][0] = width / 2 + circleSize * cos(i * 2 * PI / pointCount);
     points[i][1] = width / 2 + circleSize * sin(i * 2 * PI / pointCount);
 
-    fill(colors[i % colors.length]);
-    textSize(25);
-    textAlign(CENTER, CENTER);
-    text(connectionCount - (i % (connectionCount + 1)), width / 2 + (circleSize + 25) * cos(i * 2 * PI / pointCount), width / 2 + (circleSize + 25) * sin(i * 2 * PI / pointCount));
-   // textAlign(BASELINE, BASELINE);
+   textAlign(CENTER, CENTER);
   }
 
 
@@ -81,6 +77,12 @@ function draw() {
     stroke(0);
     ellipse(points[i][0], points[i][1], pointSize, pointSize);
     strokeWeight(3);
+
+     fill(colors[i % colors.length]);
+    textSize(25);
+    textAlign(CENTER, CENTER);
+    text(connectionCount - (i % (connectionCount + 1)), width / 2 + (circleSize + 25) * cos(i * 2 * PI / pointCount), width / 2 + (circleSize + 25) * sin(i * 2 * PI / pointCount));
+    
   }
   stroke(2);
   fill(255);
