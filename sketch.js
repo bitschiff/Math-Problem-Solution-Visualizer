@@ -46,7 +46,7 @@ colors[15]=color('Maroon');
 function draw() {
   background(0);
   var points = [];
-  for (var x = 0; x < width; x++) {
+  for (var x = 0; x < pointCount; x++) {
     points[x] = [];
   }
   for (i = 0; i < pointCount; i++) {
@@ -57,7 +57,7 @@ function draw() {
     textSize(25);
     textAlign(CENTER, CENTER);
     text(connectionCount - (i % (connectionCount + 1)), width / 2 + (circleSize + 25) * cos(i * 2 * PI / pointCount), width / 2 + (circleSize + 25) * sin(i * 2 * PI / pointCount));
-    textAlign(BASELINE, BASELINE);
+   // textAlign(BASELINE, BASELINE);
   }
 
 
@@ -65,14 +65,16 @@ function draw() {
 
 
 
-  for (i = 0; i < points.length; i++) {
+  for (var i = 0; i < points.length; i++) {
     stroke(colors[i % colors.length]);
-    for (j = 1; j <= connectionCount - (i % (connectionCount + 1)); j++) {
+    for (var j = 1; j <= connectionCount - (i % (connectionCount + 1)); j++) {
       if (i + j < points.length) {
         line(points[i][0], points[i][1], points[i + j][0], points[i + j][1]);
       } else {
+       // console.log("miss");
         line(points[i][0], points[i][1], width / 2, height / 2);
       }
+     // console.log(points.length + " "+ (i + j));
     }
     fill(colors[i % colors.length]);
     strokeWeight(0);
