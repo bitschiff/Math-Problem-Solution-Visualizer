@@ -94,8 +94,8 @@ function draw() {
  text("Number Of Connections: " + connectionCount + "     (Use Up and Down arrow keys to change)", 240, 15);
 
 
- textSize(15);
- text("Eli Schiff", width - 55, height - 15);
+textSize(15);
+// text("Eli Schiff", width - 55, height - 15);
  fill(0);
 }
 
