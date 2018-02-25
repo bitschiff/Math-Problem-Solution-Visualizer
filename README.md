@@ -1,5 +1,5 @@
 # MathLab Phone Connection Visualizer
-https://bitschiff.github.io/Phone-Wire-Visualizer/
+[Math-Problem-Solution-Visualizer](https://bitschiff.github.io/Math-Problem-Solution-Visualizer/)
 
 In Smallville, there are 15 telephones. Can they be connected by wires so that each telephone is connected with exactly 5 others?
 
